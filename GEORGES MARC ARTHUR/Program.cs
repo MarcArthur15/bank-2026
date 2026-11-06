@@ -6,15 +6,15 @@ using Bank2026.Services;
 Console.WriteLine("=== Scénario d'utilisation : Bank-2026 ===");
 
 
-var laila = new Person { FirstName = "Laila", LastName = "Massoudi", BirthDate = new DateTime(1995, 4, 12) };
-var souleyman = new Person { FirstName = "Souleyman", LastName = "Conde", BirthDate = new DateTime(1988, 9, 3) };
+var laila = new Person { FirstName = "Laila", LastName = "Massoudi", BirthDate = new DateTime(2005, 4, 12) };
+var souleyman = new Person { FirstName = "Souleyman", LastName = "Conde", BirthDate = new DateTime(2000, 9, 3) };
 
 
 var bank = new Bank("Bank-2026");
 
-var lailaCurrent = new CurrentAccount("BE01-0001", laila, 500);
-var lailaSavings = new SavingsAccount("BE01-0002", laila);
-var souleymanCurrent = new CurrentAccount("BE01-0003", souleyman, 200);
+var lailaCurrent = new CurrentAccount("BE01-1234", laila, 500);
+var lailaSavings = new SavingsAccount("BE01-4321", laila);
+var souleymanCurrent = new CurrentAccount("BE01-5678", souleyman, 200);
 
 bank.AddAccount(lailaCurrent);
 bank.AddAccount(lailaSavings);
